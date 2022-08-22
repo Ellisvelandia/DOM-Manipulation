@@ -1,0 +1,1 @@
+const title = document.querySelectro('#main-heading');
