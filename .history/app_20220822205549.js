@@ -138,10 +138,9 @@ document.addEventListener(
 document.querySelector(".div2").addEventListener(
   "click",
   function () {
-    // e.stopPropagation();
     console.log("DIV 2");
   },
-  { once: true }
+  false
 );
 
 document.querySelector(".div1").addEventListener(
@@ -152,11 +151,10 @@ document.querySelector(".div1").addEventListener(
   false
 );
 
-document.querySelector(".propagation-btn").addEventListener(
+document.querySelector("button").addEventListener(
   "click",
   function (e) {
-    e.preventDefault();
-    console.log((e.target.innerText = "clicked!"));
+    console.log(e.target.innerText = 'clicked!');
   },
   false
 );

@@ -124,7 +124,7 @@ window.addEventListener(
   function () {
     console.log("window");
   },
-  false
+  true
 );
 
 document.addEventListener(
@@ -132,16 +132,16 @@ document.addEventListener(
   function () {
     console.log("document");
   },
-  false
+  true
 );
 
 document.querySelector(".div2").addEventListener(
   "click",
   function () {
-    // e.stopPropagation();
+    e.stopPropagation();
     console.log("DIV 2");
   },
-  { once: true }
+  true
 );
 
 document.querySelector(".div1").addEventListener(
@@ -149,14 +149,13 @@ document.querySelector(".div1").addEventListener(
   function () {
     console.log("DIV 1");
   },
-  false
+  true
 );
 
 document.querySelector(".propagation-btn").addEventListener(
   "click",
   function (e) {
-    e.preventDefault();
     console.log((e.target.innerText = "clicked!"));
   },
-  false
+  true
 );

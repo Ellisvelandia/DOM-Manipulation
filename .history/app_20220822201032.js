@@ -119,44 +119,10 @@ revealBtn.addEventListener("click", revealContent);
 
 // event propagation
 
-window.addEventListener(
-  "click",
-  function () {
-    console.log("window");
-  },
-  false
-);
+window.addEventListener("click", function () {
+  console.log('window')
+},true)
 
-document.addEventListener(
-  "click",
-  function () {
-    console.log("document");
-  },
-  false
-);
-
-document.querySelector(".div2").addEventListener(
-  "click",
-  function () {
-    // e.stopPropagation();
-    console.log("DIV 2");
-  },
-  { once: true }
-);
-
-document.querySelector(".div1").addEventListener(
-  "click",
-  function () {
-    console.log("DIV 1");
-  },
-  false
-);
-
-document.querySelector(".propagation-btn").addEventListener(
-  "click",
-  function (e) {
-    e.preventDefault();
-    console.log((e.target.innerText = "clicked!"));
-  },
-  false
-);
+document.addEventListener("click", function (params) {
+  
+})

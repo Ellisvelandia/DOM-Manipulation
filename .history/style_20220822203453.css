@@ -169,5 +169,5 @@ button {
   height: 60px;
   font-size: 1rem;
   text-align: center;
-  left: 25%;
+  position: none;
 }

@@ -141,7 +141,7 @@ document.querySelector(".div2").addEventListener(
     // e.stopPropagation();
     console.log("DIV 2");
   },
-  { once: true }
+  {once: true}
 );
 
 document.querySelector(".div1").addEventListener(
@@ -155,8 +155,7 @@ document.querySelector(".div1").addEventListener(
 document.querySelector(".propagation-btn").addEventListener(
   "click",
   function (e) {
-    e.preventDefault();
-    console.log((e.target.innerText = "clicked!"));
+     e.log((e.target.innerText = "clicked!"));
   },
   false
 );
